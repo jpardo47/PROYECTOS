@@ -8,3 +8,6 @@ graphify-out/
 harvey.local.yaml
 .env
 *.zip
+# Base de datos local de la demo y cachés de Python
+demo/datos/
+__pycache__/

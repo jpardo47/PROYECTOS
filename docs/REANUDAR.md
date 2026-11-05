@@ -2,35 +2,39 @@
 
 ## Último estado comprobado (2026-11-05)
 
-- Oferta remota, plantilla, propuestas y 13 mensajes listos. **Nada enviado.**
-- La cartera privada tiene 23 empresas únicas. Los mensajes llevan la firma completa.
-- No hay código del MVP en el repositorio ni en la sesión. Harvey y Graphify no se usaron.
-- Respaldos público y privado verificados en `respaldos/`.
-- Git: cambios sin commit en `claude/trusting-franklin-ulwkkt`.
+- **Demo de reportes técnicos funcionando en local** (`demo/`) y publicada en la rama
+  `claude/trusting-franklin-ulwkkt`. Pasan 11 pruebas automáticas y 9 comprobaciones en navegador. Sin
+  autenticación, usuarios ni roles: es una demostración, no el producto completo.
+- La documentación comercial y de continuidad está publicada en la misma rama.
+- 13 mensajes y las propuestas, listos en la carpeta privada. **Nada enviado.**
+- Harvey no está operativo. Graphify se evalúa aparte (ver `docs/ESTADO_ACTUAL.md`).
 
-## Tres siguientes acciones
+## Siguiente acción concreta
 
-1. El usuario aprueba los mensajes de `privado_comercial/BORRADORES_CONTACTO.md`. Se envían a mano, de 5 a
-   10 por día, tras comprobar el canal en el sitio oficial.
-2. Verificar con un contador la documentación tributaria y de cobro, y definir las instrucciones de pago
-   por un canal verificado.
-3. Con autorización, hacer commit y push de los archivos públicos con la identidad del usuario y sin
-   coautoría. Después, empezar la demostración verificable del paquete de reportes (`docs/PLAN_7_DIAS.md`, sección D).
+El usuario aprueba los mensajes de `privado_comercial/BORRADORES_CONTACTO.md` y envía a mano la primera
+tanda, de 5 a 10, tras confirmar el canal en el sitio oficial. En las videollamadas que resulten, muestra la
+demo compartiendo pantalla (`python3 -m demo --datos-ejemplo`) y la presenta como demostración.
+
+## Después
+
+1. Verificar con un contador la documentación tributaria y de cobro.
+2. Probar la demo en un navegador móvil real, sin exponerla en red, por ejemplo con las herramientas de
+   desarrollo del navegador o con un túnel autorizado y autenticado, si se aprueba.
+3. Medir las horas reales de cualquier ajuste de la demo frente a la estimación del paquete.
 
 ## Bloqueos concretos
 
-- Falta la aprobación de los mensajes y la autorización del commit y el push (usuario).
-- Faltan la verificación tributaria y de cobro y las instrucciones de pago.
-- La política de red solo permite consultar los sitios de las empresas mediante el buscador.
-- La instalación de paquetes externos puede requerir permiso, como ocurrió con Harvey.
+- Faltan la aprobación de los mensajes y la verificación tributaria y de cobro.
+- La demo no tiene autenticación: no debe exponerse en red.
+- La red del entorno solo permite consultar sitios externos mediante el buscador.
 - El entorno es efímero: lo que no tenga commit ni respaldo descargado se pierde.
 
 ## Archivos que debe leer la siguiente sesión
 
-`CLAUDE.md` → este archivo → `docs/ESTADO_ACTUAL.md`. Después, solo los archivos de la tarea, según la tabla
-de `CLAUDE.md`.
+`CLAUDE.md` → este archivo → `docs/ESTADO_ACTUAL.md`. Para la demo: `README.md` y luego solo el módulo de
+`demo/` que se vaya a cambiar.
 
 ## Mensaje corto para reanudar
 
 > Lee CLAUDE.md y docs/REANUDAR.md, verifica docs/ESTADO_ACTUAL.md contra los archivos reales y continúa
-> con la acción 1. No vuelvas a investigar empresas ni reconstruyas el historial.
+> con la siguiente acción concreta. No vuelvas a investigar empresas ni reconstruyas el historial.
