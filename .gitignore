@@ -1,0 +1,10 @@
+# Datos comerciales privados (prospectos, canales de contacto, borradores, modelo interno). Nunca versionar.
+privado_comercial/
+# Respaldos generados localmente
+respaldos/
+# Salidas de indexación local (si algún día se usa Graphify)
+graphify-out/
+# Configuración local con datos de negocio o secretos
+harvey.local.yaml
+.env
+*.zip
