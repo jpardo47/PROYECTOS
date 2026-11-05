@@ -49,7 +49,7 @@ Colombia: primero Popayán y Cali, luego Bogotá y Medellín.
 - Harvey no está instalado y no ejecutó ningún comando: su instalación fue bloqueada por el control de permisos.
 - La cartera privada tiene 23 empresas únicas (sin duplicados por identificador, dominio, nombre ni canal).
   Se verificaron con el buscador restringido a su dominio oficial, no abriendo las páginas.
-- Graphify no está disponible en el entorno.
+- Graphify (`graphifyy` 0.9.102) se evaluó instalado de forma aislada y temporal; ver `docs/GRAPHIFY.md`.
 - Los respaldos público y privado se generaron y verificaron (ver `docs/ESTADO_ACTUAL.md`).
 
 ## Información proporcionada por el usuario (no verificada aquí)
@@ -76,4 +76,3 @@ Colombia: primero Popayán y Cali, luego Bogotá y Medellín.
 - El primer piloto con un cliente.
 - La expansión a otras ciudades y a Latinoamérica en modalidad remota.
 - La evaluación de visión computacional sobre material autorizado.
-- La indexación con Graphify, cuando exista código.

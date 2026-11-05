@@ -16,4 +16,4 @@ Actualizado el 2026-11-05. Todas fueron aprobadas por el usuario salvo que se in
 | D10 | Ninguna comunicación, commit, push ni despliegue sin autorización explícita. Los commits solo con la identidad del usuario y sin coautoría | Control del usuario sobre lo que se publica |
 | D11 | El MVP se presenta como demostración con detecciones simuladas | Honestidad sobre la capacidad real |
 | D12 | Harvey no se usa en esta fase. Si se usa: envío desactivado y aprobación obligatoria | Evitar envíos y bucles no supervisados |
-| D13 | Graphify no se usa mientras no haya código. Si se usa: solo local, sin nube, hooks ni modelos | Evitar un índice vacío y procesos no deseados |
+| D13 | Graphify, solo como complemento: `extract --code-only` sobre una copia del commit (`git archive`), con `GRAPHIFY_BACKEND=none` y HOME aislado. Sin `install`, hooks, MCP, Cloud ni modelos | Consultas de estructura sin exponer datos privados ni generar costos |

@@ -14,9 +14,9 @@ como tal y no se presenta como verificado aquí.
 | Datos tributarios y de cobro | RUT tramitado **según el usuario**; sin verificar | Información del usuario | — | Verificación con un contador |
 | Harvey | **No operativo**: no instalado ni ejecutado | Instalación bloqueada por el control de permisos | `docs/comercial/ESTADO_HARVEY.md` | Ninguna en esta fase |
 | MVP de analítica de video | Ausente en la sesión y en el repositorio | Búsqueda en archivos y en GitHub | — | No se reconstruye (decisión del usuario) |
-| Graphify | Pendiente de evaluar | Fuente oficial indicada por el usuario: `Graphify-Labs/graphify`, paquete `graphifyy`; el repositorio existe (`git ls-remote`) | — | Evaluar el uso local sin hooks ni servicios alojados |
+| Graphify | Evaluado: solo código, local y sin modelos | `graphifyy` 0.9.102 instalado de forma aislada (temporal); 164 nodos y 315 relaciones; 3 consultas verificadas contra el código. Sin `install`, hooks, MCP ni Cloud | `docs/GRAPHIFY.md` | Opcional. El índice no se conserva: regenerarlo en cada sesión y tras cambios de código |
 | Respaldos | Comerciales (público y privado) y de la demo, verificados | Integridad, inventario y revisión de privacidad | `respaldos/` (local, ignorada por Git) | Descargarlos; el entorno es efímero |
-| Git | Commits en `claude/trusting-franklin-ulwkkt`: `fcc343c` (documentación) y el de la demo (ver `git log`). `main` sin cambios | `git ls-remote` comparado con el HEAD local | — | Cualquier commit nuevo requiere autorización |
+| Git | `fcc343c` (documentación), `460bd8b` (demo) y el commit de continuidad de Graphify (ver `git log`) publicados en `claude/trusting-franklin-ulwkkt`. `main` incluye `fcc343c` por la fusión del PR #1, hecha en GitHub con la cuenta del usuario; `460bd8b` no está en `main` | `git ls-remote` y `git log origin/main` | — | Cualquier commit nuevo requiere autorización |
 
 ## Demo: funciones reales
 
@@ -51,6 +51,9 @@ como tal y no se presenta como verificado aquí.
 - Horas reales de la demo frente a la estimación del paquete: no se midieron.
 
 ## Discrepancias registradas
+
+- La versión publicada en `460bd8b` decía "`main` sin cambios". Después, `main` recibió la fusión del PR #1
+  (con `fcc343c`), hecha desde GitHub y no desde esta sesión.
 
 - Una respuesta anterior de la sesión calificó de ambigua la fuente oficial de Graphify. El usuario la
   identificó como `Graphify-Labs/graphify` (paquete `graphifyy`), y el repositorio existe.

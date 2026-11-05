@@ -2,7 +2,9 @@
 
 ## Regla de inicio
 
-Al iniciar, lee CLAUDE.md y docs/REANUDAR.md. Consulta docs/ESTADO_ACTUAL.md para verificar el estado. Después lee únicamente los archivos necesarios para la tarea. Si hay un índice Graphify vigente, úsalo para localizar código, pero verifica las fuentes antes de modificarlo. No reconstruyas toda la conversación ni escanees el repositorio completo por defecto.
+Al iniciar, lee `docs/REANUDAR.md`, verifica el estado en `docs/ESTADO_ACTUAL.md` y consulta únicamente los
+archivos necesarios para la tarea. No reconstruyas la conversación ni escanees el repositorio completo.
+Graphify es opcional: su ausencia no bloquea el trabajo.
 
 Si un dato de estos documentos está desactualizado o contradice los archivos reales, registra la discrepancia en `docs/ESTADO_ACTUAL.md` y no lo repitas como hecho.
 
@@ -92,9 +94,9 @@ digitales. Detalle en `docs/CONTEXTO_MAESTRO.md`.
 **Pendientes**: celular físico, Safari o iOS real, volumen alto, lector de pantalla y horas reales frente a
 la estimación.
 
-## Graphify (complementario)
+## Graphify (opcional)
 
-Fuente oficial indicada por el usuario: repositorio `Graphify-Labs/graphify` (existencia comprobada con
-`git ls-remote`), paquete `graphifyy` y comando `graphify`. Solo uso local, sin servicios alojados, hooks
-ni enriquecimiento con modelos, y excluyendo lo privado. Su estado está en `docs/ESTADO_ACTUAL.md`. No
-sustituye a este archivo ni a `docs/REANUDAR.md`.
+Fuente oficial: `Graphify-Labs/graphify`, paquete `graphifyy` (probado en la versión 0.9.102). Se usa solo
+en local, con `--code-only`, sin hooks, sin servicios alojados y sin modelos, sobre una copia del commit.
+La instalación y el índice son temporales y se regeneran en cada sesión nueva. Si se usa, comprobar
+siempre el resultado contra el código fuente. Procedimiento exacto en `docs/GRAPHIFY.md`.
